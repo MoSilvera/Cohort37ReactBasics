@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
-//if you intend to create a custom hook or functional component, linter defaults to capitalization
 //this is a custom hook that will return an object
-//hook allows us to use local state w/o a class
+//hook allows us to use local state w/o a class, we can share logic
 const useAuthCheck = () => {
 
     //declares a state variable of is logged in, setLogin will be out call to set state
