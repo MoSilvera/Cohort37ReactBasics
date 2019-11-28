@@ -11,10 +11,12 @@ const useAuthCheck = () => {
     //returns true if current state of isLoggedIn is true
     //OR sessionStorage is not empty
     //OR local storage is not empty
-    const isAuthenticated = () =>
-        isLoggedIn
-        || sessionStorage.getItem !== null
-        || localStorage.getItem !== null
+    const isAuthenticated = () => {
+        if (isLoggedIn === true || sessionStorage.getItem("credentials") !== null || localStorage.getItem("credentials") !== null){
+            console.log("true")
+            return true
+        }
+    }
 
     //accepts email password and storageType
     //sets default storageType to localStorage

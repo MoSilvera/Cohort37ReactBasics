@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'reac-router-dom'
+import { Route } from 'react-router-dom'
 import useAuthCheck from '../../hooks/authHandling'
 import Login from '../auth/Login'
 
@@ -14,6 +14,7 @@ const AuthCheckRoute = ({path, Destination}) => {
         {props => {
             if (isAuthenticated())
             {
+                console.log("hi")
                 return <Destination
                 {...props} />
             }
@@ -24,3 +25,5 @@ const AuthCheckRoute = ({path, Destination}) => {
         }} />
     )
 }
+
+export default AuthCheckRoute
