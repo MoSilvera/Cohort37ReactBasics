@@ -8,9 +8,9 @@ export default props => {
 
     return (
         <React.Fragment>
-            <div>
+            <div class="oneAnimal">
                 <h4>{animal.name}</h4>
-                    <img alt={animal.name} src={animal.img}></img>
+                   <div className="thumbnail"><img alt={animal.name} src={animal.img}></img></div> 
                     <p>Breed: {animal.breed}</p>
             </div>
         </React.Fragment>

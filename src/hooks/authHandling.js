@@ -13,7 +13,6 @@ const useAuthCheck = () => {
     //OR local storage is not empty
     const isAuthenticated = () => {
         if (isLoggedIn === true || sessionStorage.getItem("credentials") !== null || localStorage.getItem("credentials") !== null){
-            console.log("true")
             return true
         }
     }

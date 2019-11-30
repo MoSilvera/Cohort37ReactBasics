@@ -14,7 +14,6 @@ const AuthCheckRoute = ({path, Destination}) => {
         {props => {
             if (isAuthenticated())
             {
-                console.log("hi")
                 return <Destination
                 {...props} />
             }

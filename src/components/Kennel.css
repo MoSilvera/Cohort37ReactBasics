@@ -36,8 +36,10 @@ address {
 img {
   display: block;
   border: 0;
-  width: 75px;
+  width: 120px;
+  height: 120px;
   height: auto;
+  border-radius: 50%;
 }
 
 .section-content {
@@ -49,3 +51,15 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.animalList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.oneAnimal{
+    display: flex;
+    flex-direction: column;
+}
+
