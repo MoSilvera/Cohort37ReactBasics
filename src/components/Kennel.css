@@ -34,12 +34,10 @@ address {
 }
 
 img {
-  display: block;
   border: 0;
   width: 120px;
   height: 120px;
   height: auto;
-  border-radius: 50%;
 }
 
 .section-content {
