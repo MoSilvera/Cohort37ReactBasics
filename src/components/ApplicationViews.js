@@ -7,6 +7,8 @@ import AnimalList from './animal/AnimalList'
 import './Kennel.css'
 
 export default () => {
+
+    //The providers are the context components. Any child of those providers will have access to the value props
     return (
         <React.Fragment>
             <AuthCheckRoute exact path="/" Destination={Home} />
