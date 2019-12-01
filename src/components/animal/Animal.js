@@ -8,10 +8,9 @@ export default props => {
     const [employee, setEmployee] = useState({})
 
     useEffect(()=> {
-        console.log(props.animal.employeeId)
         EmployeeRepository.get(props.animal.employeeId)
         .then((res) => {
-           console.log(res)
+
             setEmployee(res)})
     }, [props.animal.employeeId])
 

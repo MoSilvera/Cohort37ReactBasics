@@ -7,7 +7,6 @@ const LocationModal = (props) => {
     className
   } = props;
 
-  const location = props.location
   const [modal, setModal] = useState(false);
   const animals = props.animals
 

@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import {LocationContext} from '../providers/LocationProvider'
 import './Location.css'
 import LocationAnimalModal from './LocationAnimalModal'
+import LocationEmployeeModal from './LocationEmployeeModal'
 
 export default props => {
   //subscribes to changes in the locations value of the LocationContext object
   const {locations} = useContext(LocationContext)
 
   const location = props.location
-  console.log(location.animals)
 
 
   return (
@@ -21,6 +21,7 @@ export default props => {
               </div>
               <LocationAnimalModal location={location}
               animals={location.animals} />
+              <LocationEmployeeModal employees={location.employees} />
           </div>
       </React.Fragment>
   )
