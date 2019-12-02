@@ -13,7 +13,7 @@ const LocationEmployeeModal = (props) => {
   const toggle = () => setModal(!modal);
   return (
     <div>
-      <Button color="danger" onClick={toggle}>Our People</Button>
+      <Button color="info" onClick={toggle}>Our People</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Who's lettin the dogs out?</ModalHeader>
         <ModalBody className="animalList">
@@ -21,8 +21,8 @@ const LocationEmployeeModal = (props) => {
 
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
-          <Button color="secondary" onClick={toggle}>Close</Button>
+          <Button className="locationModalButton" color="primary" onClick={toggle}>Do Something</Button>{' '}
+          <Button className="locationModalButton" color="secondary" onClick={toggle}>Close</Button>
         </ModalFooter>
       </Modal>
     </div>

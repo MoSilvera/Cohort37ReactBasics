@@ -13,7 +13,7 @@ const LocationModal = (props) => {
   const toggle = () => setModal(!modal);
   return (
     <div>
-      <Button color="danger" onClick={toggle}>Our Pups</Button>
+      <Button color="info" onClick={toggle}>Our Pups</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Who is staying with us today?</ModalHeader>
         <ModalBody className="animalList">

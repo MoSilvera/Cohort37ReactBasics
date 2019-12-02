@@ -62,3 +62,8 @@ img {
     flex-direction: column;
 }
 
+.card{
+    margin: 10px;
+    padding: 10px;
+}
+

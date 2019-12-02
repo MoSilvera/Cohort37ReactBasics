@@ -7,6 +7,10 @@ import AnimalList from './animal/AnimalList'
 import LocationList from './location/LocationList'
 import {ComplexAnimalProvider} from './providers/ComplexAnimalProvider'
 import './Kennel.css'
+import {EmployeeProvider} from './providers/EmployeeProvider'
+import EmployeeList from './employee/EmployeeList'
+import UserList from './user/UserList'
+import { ComplexUserProvider } from './providers/ComplexUserProvider'
 
 export default () => {
 
@@ -23,6 +27,14 @@ export default () => {
             <ComplexAnimalProvider>
                 <AuthCheckRoute exact path="/locations" Destination={LocationList}/>
             </ComplexAnimalProvider>
+
+            <EmployeeProvider>
+                <AuthCheckRoute exact path="/employees" Destination={EmployeeList} />
+            </EmployeeProvider>
+
+            <ComplexUserProvider>
+                <AuthCheckRoute exact path="/owners" Destination={UserList}/>
+            </ComplexUserProvider>
 
         </ React.Fragment>
     )

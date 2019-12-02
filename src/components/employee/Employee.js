@@ -12,7 +12,17 @@ export default props => {
             setLocation(res)})
     }, [props.employee.locationId])
 
+    const animalsCheck = (x) => {
+        if(x !== undefined){
+            return(
+                <React.Fragment>
+                    <div>Furry Friends:</div>
+                    <div>{x.map(animal => <span>{animal.name} </span>)}</div>
+                </React.Fragment>
+            )
+        }
 
+    }
         return (
             <React.Fragment>
                 <div className="card" style={{width: 12 + 'rem'}}>
@@ -20,6 +30,7 @@ export default props => {
                     <div className="card-body">
                        <div className="card-title">{props.employee.name}</div>
                         <div >Location: {location.name}</div>
+                        <div>{animalsCheck(props.employee.animals)}</div>
                     </div>
                 </div>
             </React.Fragment>

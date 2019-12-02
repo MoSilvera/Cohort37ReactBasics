@@ -13,6 +13,8 @@ export default (props) => {
 
                 <Link className="nav-link" to="/Locations">Locations</Link>
 
+                <Link className="nav-link" to="/Employees">Employees</Link>
+
                 <Link className="nav-link" to="/login">Logout</Link>
         </nav>
     )

@@ -19,9 +19,10 @@ export default props => {
                   <h4 className="card-title">{location.name}</h4>
                   <div>Address: {location.address}</div>
               </div>
-              <LocationAnimalModal location={location}
-              animals={location.animals} />
-              <LocationEmployeeModal employees={location.employees} />
+              <div className="buttonFlex">
+                <LocationAnimalModal location={location} animals={location.animals} />
+                <LocationEmployeeModal employees={location.employees} />
+              </div>
           </div>
       </React.Fragment>
   )
