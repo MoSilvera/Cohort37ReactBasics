@@ -13,6 +13,7 @@ export default props => {
            <div className="animalList">
                 {locations.map(oneLocation =>
                 <Location
+                {...props}
                 key={oneLocation.id}
                 location={oneLocation}
                 />)}

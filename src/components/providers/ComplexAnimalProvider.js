@@ -2,6 +2,7 @@ import React from 'react'
 import { AnimalProvider } from './AnimalProvider'
 import { LocationProvider } from './LocationProvider'
 import { EmployeeProvider } from './EmployeeProvider'
+import { UserAnimalProvider } from './UserAnimalProvider'
 
 export const ComplexAnimalProvider = (props) => {
 
@@ -10,7 +11,9 @@ export const ComplexAnimalProvider = (props) => {
         <AnimalProvider>
             <LocationProvider>
                 <EmployeeProvider>
-                    {props.children}
+                    <UserAnimalProvider>
+                        {props.children}
+                    </UserAnimalProvider>
                 </EmployeeProvider>
             </LocationProvider>
         </AnimalProvider>

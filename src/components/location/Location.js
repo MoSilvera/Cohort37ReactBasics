@@ -20,7 +20,7 @@ export default props => {
                   <div>Address: {location.address}</div>
               </div>
               <div className="buttonFlex">
-                <LocationAnimalModal location={location} animals={location.animals} />
+                <LocationAnimalModal {...props} location={location} animals={location.animals} />
                 <LocationEmployeeModal employees={location.employees} />
               </div>
           </div>

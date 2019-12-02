@@ -11,6 +11,7 @@ import {EmployeeProvider} from './providers/EmployeeProvider'
 import EmployeeList from './employee/EmployeeList'
 import UserList from './user/UserList'
 import { ComplexUserProvider } from './providers/ComplexUserProvider'
+import AnimalDetail from './animal/AnimalDetail'
 
 export default () => {
 
@@ -25,7 +26,8 @@ export default () => {
             </AnimalProvider>
 
             <ComplexAnimalProvider>
-                <AuthCheckRoute exact path="/locations" Destination={LocationList}/>
+                <AuthCheckRoute exact path="/locations" Destination={LocationList} />
+                <AuthCheckRoute exact path="/animals/:animalId(\d+)" Destination={AnimalDetail}/>
             </ComplexAnimalProvider>
 
             <EmployeeProvider>
@@ -35,6 +37,8 @@ export default () => {
             <ComplexUserProvider>
                 <AuthCheckRoute exact path="/owners" Destination={UserList}/>
             </ComplexUserProvider>
+
+
 
         </ React.Fragment>
     )

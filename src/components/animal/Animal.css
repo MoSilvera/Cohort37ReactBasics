@@ -1,0 +1,6 @@
+.animalDetail {
+    display: flex;
+}
+.detailImage{
+    max-width: 500px;
+}
