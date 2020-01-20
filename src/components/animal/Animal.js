@@ -2,8 +2,9 @@ import React, { useEffect, useContext, useState } from 'react'
 import { AnimalContext } from '../providers/AnimalProvider'
 import EmployeeRepository from '../../repositories/EmployeeRepository'
 import { Button } from 'reactstrap'
+import { withRouter } from 'react-router-dom'
 
-export default props => {
+const Animal = props => {
     //subscribes to changes in the animal value of the AnimalContext object
     let { animals } = useContext(AnimalContext)
     const [employee, setEmployee] = useState({})
@@ -34,3 +35,4 @@ export default props => {
 
 
 }
+export default withRouter(Animal)
