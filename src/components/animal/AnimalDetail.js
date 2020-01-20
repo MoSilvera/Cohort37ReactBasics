@@ -36,7 +36,7 @@ const AnimalDetail = props => {
                 <h1>Hi! My name is {currentAnimal.name} </h1>
                 <h5>I am currently staying at {locationName}</h5>
                 <h5>{employeeName} is taking care of me. </h5>
-                <h5>I am a {currentAnimal.breed}</h5>
+                <h5>My breed is:{currentAnimal.breed}</h5>
                 <h5>Parents: {users.map(user => `${user.user.firstName} ${user.user.lastName}`).join(", ")}</h5>
             </div>
         </div>

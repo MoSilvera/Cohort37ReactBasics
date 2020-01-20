@@ -34,7 +34,7 @@ const Login = props => {
             </fieldset>
             <fieldset>
                 <label htmlFor="passwordInput">Password</label>
-                <input ref={password} type="email" placeholder="password"
+                <input ref={password} type="password" placeholder="password"
                 required />
             </fieldset>
             <fieldset>
