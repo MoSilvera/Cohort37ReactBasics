@@ -12,6 +12,8 @@ import EmployeeList from './employee/EmployeeList'
 import UserList from './user/UserList'
 import { ComplexUserProvider } from './providers/ComplexUserProvider'
 import AnimalDetail from './animal/AnimalDetail'
+import { EmployeeLocationProvider } from './providers/EmployeeLocationProvider'
+import  EmployeeForm from './employee/EmployeeForm'
 
 export default () => {
 
@@ -37,6 +39,10 @@ export default () => {
             <ComplexUserProvider>
                 <AuthCheckRoute exact path="/owners" Destination={UserList}/>
             </ComplexUserProvider>
+
+            <EmployeeLocationProvider>
+                <AuthCheckRoute exact path="/employees/create" Destination={EmployeeForm} />
+            </EmployeeLocationProvider>
 
 
 
