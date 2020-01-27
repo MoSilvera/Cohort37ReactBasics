@@ -3,6 +3,7 @@ import { EmployeeContext } from "../providers/EmployeeProvider"
 import { LocationContext } from "../providers/LocationProvider"
 
 export default props => {
+    console.log("hello")
     const { addEmployee } = useContext(EmployeeContext)
     const { locations } = useContext(LocationContext)
     const employeeName = useRef("")
@@ -19,6 +20,7 @@ export default props => {
                 name: employeeName.current.value,
                 locationId: locationId
             }).then(() => props.history.push("/employees"))
+
         }
     }
 

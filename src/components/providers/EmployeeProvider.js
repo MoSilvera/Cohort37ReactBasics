@@ -14,6 +14,7 @@ export const EmployeeProvider = props => {
        getEmployees()
     }, [])
 
+
     const getEmployees = () => {
         EmployeeRepository.getAll()
         .then((employees) => {

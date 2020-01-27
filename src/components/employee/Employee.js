@@ -17,7 +17,7 @@ export default props => {
             return(
                 <React.Fragment>
                     <div>Furry Friends:</div>
-                    <div>{x.map(animal => <span>{animal.name} </span>)}</div>
+                    <div>{x.map(animal => <span key={animal.id}>{animal.name} </span>)}</div>
                 </React.Fragment>
             )
         }
