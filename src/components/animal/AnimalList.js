@@ -10,6 +10,9 @@ export default props => {
     //returns an animal component for each animal in value from the context object
     return(
         <React.Fragment>
+             <button onClick={() => props.history.push("/animals/create")}>
+                 Add Animal
+                </button>
            <div className="animalList">
                 {animals.map(oneAnimal =>
                 <Animal

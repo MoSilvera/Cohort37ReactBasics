@@ -12,15 +12,14 @@ export default (props) => {
         <nav className="navbar">
                 <Link className="navbar-brand" to="/">All Kreatures Kennel </Link>
 
-                <Link className="nav-link" to="/Animals">Animals</Link>
+                <Link className="nav-link" to="/animals">Animals</Link>
 
-                <Link className="nav-link" to="/Owners">Owners</Link>
+                <Link className="nav-link" to="/owners">Owners</Link>
 
-                <Link className="nav-link" to="/Locations">Locations</Link>
+                <Link className="nav-link" to="/locations">Locations</Link>
 
-                <Link className="nav-link" to="/Employees">Employees</Link>
+                <Link className="nav-link" to="/employees">Employees</Link>
 
-                {/* <Link className="nav-link" to="/login">Logout</Link> */}
 
                 {
                     sessionStorage.getItem("credentials") !== null || localStorage.getItem("credentials") !== null

@@ -13,6 +13,9 @@ import { ComplexUserProvider } from './providers/ComplexUserProvider'
 import AnimalDetail from './animal/AnimalDetail'
 import { EmployeeLocationProvider } from './providers/EmployeeLocationProvider'
 import EmployeeForm from './employee/EmployeeForm'
+import AnimalForm from './animal/AnimalForm'
+
+
 export default () => {
 
     //The providers are the context components. Any child of those providers will have access to the value props
@@ -21,13 +24,15 @@ export default () => {
         <React.Fragment>
             <AuthCheckRoute exact path="/" Destination={Home} />
 
-            <AnimalProvider>
+            {/* <AnimalProvider>
                 <AuthCheckRoute exact path="/animals" Destination={AnimalList}/>
-            </AnimalProvider>
+            </AnimalProvider> */}
 
             <ComplexAnimalProvider>
                 <AuthCheckRoute exact path="/locations" Destination={LocationList} />
                 <AuthCheckRoute exact path="/animals/:animalId(\d+)" Destination={AnimalDetail}/>
+                <AuthCheckRoute exact path="/animals" Destination={AnimalList}/>
+                <AuthCheckRoute exact path="/animals/create" Destination={AnimalForm}/>
             </ComplexAnimalProvider>
 
             <ComplexUserProvider>
